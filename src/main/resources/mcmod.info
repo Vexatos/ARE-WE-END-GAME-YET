@@ -1,0 +1,17 @@
+[
+{
+  "modid": "estis peccatura",
+  "name": "ARE WE END GAME YET?!?",
+  "description": "You are insane.",
+  "version": "${version}",
+  "credits": "",
+  "logoFile": "",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [ "Vexatos" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]
