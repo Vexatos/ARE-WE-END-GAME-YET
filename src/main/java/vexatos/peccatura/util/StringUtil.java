@@ -1,21 +1,21 @@
 package vexatos.peccatura.util;
 
-import java.util.ArrayList;
+import net.minecraft.util.StatCollector;
 
 /**
  * @author Vexatos
  */
 public class StringUtil {
 
-	public static String[] dropArgs(String[] args, int count) {
-		ArrayList<String> list = new ArrayList<String>();
-		for(String s : args) {
-			if(count > 0) {
-				count--;
-			} else {
-				list.add(s);
-			}
-		}
-		return list.toArray(new String[list.size()]);
+	public static String localize(String key) {
+		return StatCollector.translateToLocal(key).replace("\\n", "\n");
+	}
+
+	public static String localizeAndFormat(String key, Object... formatting) {
+		return StatCollector.translateToLocalFormatted(key, formatting);
+	}
+
+	public static boolean canTranslate(String key) {
+		return StatCollector.canTranslate(key);
 	}
 }
