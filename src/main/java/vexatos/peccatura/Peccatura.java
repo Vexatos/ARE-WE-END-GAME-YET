@@ -45,7 +45,5 @@ public class Peccatura {
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
-
-		ExtremeCraftingManager.getInstance().addShapelessOreRecipe(new ItemStack(automaTable), LudicrousBlocks.dire_crafting);
 	}
 }
